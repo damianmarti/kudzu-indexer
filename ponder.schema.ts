@@ -6,4 +6,9 @@ export default createSchema((p) => ({
     owner: p.string(),
     contract: p.string(),
   }),
+  Kudzu: p.createTable({
+    id: p.bigint(),
+    token: p.bigint(),
+    contract: p.string(),
+  }),
 }));
