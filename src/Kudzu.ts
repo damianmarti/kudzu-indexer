@@ -4,7 +4,7 @@ ponder.on(
   "Kudzu:Transfer",
   async ({ event, context }) => {
     const { Kudzu } = context.db;
-    console.log(event.args);
+    // console.log(event.args);
 
     await Kudzu.upsert({
       id: event.args.tokenId,
